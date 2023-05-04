@@ -1,6 +1,7 @@
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
+	line-height: 30px;
 }
 
 header {
@@ -33,6 +34,18 @@ main {
 	margin-bottom: 40px;
 }
 
+.about-me h2{
+	text-align: center;
+}
+
+.about-me img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 400px;
+border-radius: 20px;
+height: 400px;
+}
 .portfolio {
 	margin-bottom: 40px;
 }
@@ -82,4 +95,23 @@ main {
 footer {
 	background-color: #333;
 	color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+	.portfolio ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		align-items: center;
+		display: flex;
+	    flex-direction: column;
+	}
+
+	nav li {
+		display: block;
+	}
+
+	body {
+		text-align: center;
+	}
 }
